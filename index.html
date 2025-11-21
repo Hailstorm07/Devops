@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>DevOps Intern Assignment - Part 2</h1>
+    <p><strong>Name:</strong> Aniket Kumar</p>
+    <p><strong>Instance ID:</strong> <span id="instance-id">Loading...</span></p>
+    <p><strong>Uptime:</strong> $(uptime -p)</p>
+
+    <script>
+        fetch('http://169.254.169.254/latest/meta-data/instance-id')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('instance-id').innerText = data;
+            });
+    </script>
+</body>
+</html>
+EOF
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>DevOps Intern Assignment - Part 2</h1>
+    <p><strong>Name:</strong> Aniket Kumar</p>
+    <p><strong>Instance ID:</strong> <span id="instance-id">Loading...</span></p>
+    <p><strong>Uptime:</strong> up 29 minutes</p>
+
+    <script>
+        fetch('http://169.254.169.254/latest/meta-data/instance-id')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('instance-id').innerText = data;
+            });
+    </script>
+</body>
+</html>
