@@ -29,7 +29,7 @@ This project demonstrates the setup of a Linux EC2 instance, web server configur
 * **Command Used:**
   ```bash
   aws logs put-log-events --log-group-name "/devops/intern-metrics" --log-stream-name "ec2-instance-logs" --log-events file://payload.json
-  Proof: See screenshot part4_cloudwatch.png.
+  Proof: See screenshot part4_SS.png.
 
 Usage
 To reproduce the monitoring setup:
